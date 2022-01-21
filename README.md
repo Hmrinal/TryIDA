@@ -13,3 +13,16 @@ qf(p=0.95, df1=(dofX), df2=dofY) <= critical F-crit, where confidence=95(given) 
 ```TRUE= probability to left of p , FALSE= probability to right of p```  
 1-pf(1.996737, 10, 10) <= Pvalue corresponding to Fcalc ```1-pf(Fcalc, df1, df2)```  
 
+## Mock Exam P1   
+```Q3: Body temperature was measured by telemetry every 10 minutes for a female beaver ``` 
+- ``` Load the data set beaver1 in the package datasets ```
+- Installing Package: Package => Install Pacakage => Germany(Gottingen){If not selected} => Required Package  
+- On console => library(packageName)  
+- Loading the dataset => data(datasetName)  OR datasetName{directly name}
+- summary(datasetName)  <= to know about the given data  
+- ``` mean of the variable temp```    
+- b=beaver1 <= variable name   
+- b$temp <= accessing the column value  
+- mean(b$temp) <= mean of values  
+- ```  construct a 95% two-sided confidence interval for the population mean ```  
+- t.test(b$temp, conf.level=0.95)
