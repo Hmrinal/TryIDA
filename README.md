@@ -12,7 +12,17 @@ N-1 <= Degree of Freedom(dof), where N=sample size
 
 
 ### Calculating the Confidence Interval
-``` CI on Mean of a Normal Distribution, Variance Known ```
+
+- n= Sample Size
+- σ= standard deviation, s= estimated standard deviation
+- μ= mean, x= estimated mean  
+- u= critical value  
+
+``` CI on Mean of a Normal Distribution, Variance Known ```  
+[x-(σ/sqrt(n))*u || x+(σ/sqrt(n))*u]
+To calculate u :
+suppose we are given 99% confidence interval => so 1-α= 1-0.95=0.05, here 0.05 is α => ```qnorm(0.05)``` is the value of u
+
 
 
 
