@@ -18,15 +18,22 @@ N-1 <= Degree of Freedom(dof), where N=sample size
 - μ= mean, x= estimated mean  
 - u= critical value  
 
-``` CI on Mean of a Normal Distribution, Variance Known ```  
-[x-(σ/sqrt(n))*u || x+(σ/sqrt(n))*u]
-To calculate u :
+#### CI on Mean of a Normal Distribution, Variance Known   
+[x-(σ/sqrt(n))*u || x+(σ/sqrt(n))*u]  
+To calculate u :  
 suppose we are given 99% confidence interval => so 1-α= 1-0.95=0.05, here 0.05 is α => ```qnorm(0.05)``` is the value of u
 
+#### CI on Mean of a Normal Distribution, Variance Unknown     
+[x-{(s/sqrt(n))*t(n-1,1-(α/2))} || x+{(s/sqrt(n))*t(n-1,1-(α/2))}]      
+To calculate t(n-1,1-(α/2)) :    
+suppose we are given 99% confidence interval => so 1-α= 1-0.95=0.05, here 0.05 is α => ```qt((1-(α/2)),n-1)``` is the value of t 
 
 
 
 
+
+
+------***********-------***********-------***********-------***********-------***********-------***********-------  
 qf(p=0.95, df1=(dofX), df2=dofY) <= critical F-crit, where confidence=95(given) and dofX= degree of freedom of x set  ```(lower.tail=FALSE)-default TRUE```    
 ```TRUE= probability to left of p , FALSE= probability to right of p```  
 1-pf(1.996737, 10, 10) <= Pvalue corresponding to Fcalc ```1-pf(Fcalc, df1, df2)```  
