@@ -9,6 +9,14 @@ sd(x) <= standard deviation
 std.error(x) <= standard error of mean  {library(plotrix)}  
 var(x)/var(y) <= Fcalc  
 N-1 <= Degree of Freedom(dof), where N=sample size  
+
+
+### Calculating the Confidence Interval
+``` CI on Mean of a Normal Distribution, Variance Known ```
+
+
+
+
 qf(p=0.95, df1=(dofX), df2=dofY) <= critical F-crit, where confidence=95(given) and dofX= degree of freedom of x set  ```(lower.tail=FALSE)-default TRUE```    
 ```TRUE= probability to left of p , FALSE= probability to right of p```  
 1-pf(1.996737, 10, 10) <= Pvalue corresponding to Fcalc ```1-pf(Fcalc, df1, df2)```  
