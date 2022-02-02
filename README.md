@@ -18,7 +18,7 @@ N-1 <= Degree of Freedom(dof), where N=sample size
 - μ= mean, x= estimated mean  
 - u= critical value  
 
-#### CI on Mean of a Normal Distribution, Variance Known   
+#### CI on Mean of a Normal Distribution, Variance Known 
 [x-(σ/sqrt(n))*u || x+(σ/sqrt(n))*u]  
 To calculate u :  
 suppose we are given 99% confidence interval => so 1-α= 1-0.95=0.05, here 0.05 is α => ```qnorm(0.05)``` is the value of u
@@ -27,6 +27,13 @@ suppose we are given 99% confidence interval => so 1-α= 1-0.95=0.05, here 0.05 
 [x-{(s/sqrt(n))*t(n-1,1-(α/2))} || x+{(s/sqrt(n))*t(n-1,1-(α/2))}]      
 To calculate t(n-1,1-(α/2)) :    
 suppose we are given 99% confidence interval => so 1-α= 1-0.95=0.05, here 0.05 is α => ```qt((1-(α/2)),n-1)``` is the value of t 
+
+#### CI on Variance of a Normal Distribution, Mean
+``` Answer comes in the form of Variance, so always take SQRT() for Std. Deviation```
+##### Mean Knownt
+##### Mean Unknown
+
+
 
 
 
